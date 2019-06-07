@@ -1,0 +1,5 @@
+rootProject.name = 'RNTwitterKitExample'
+include ':@mango-chutney_react-native-twitter-kit'
+project(':@mango-chutney_react-native-twitter-kit').projectDir = new File(rootProject.projectDir, '../node_modules/@mango-chutney/react-native-twitter-kit/android')
+
+include ':app'
