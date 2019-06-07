@@ -29,10 +29,20 @@
   	include ':@mango-chutney/react-native-twitter-kit'
   	project(':@mango-chutney/react-native-twitter-kit').projectDir = new File(rootProject.projectDir, 	'../node_modules/@mango-chutney/react-native-twitter-kit/android')
   	```
-3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
+3. Insert the following lines inside the dependencies block in `androd/app/build.gradle`:
   	```
       compile project(':@mango-chutney/react-native-twitter-kit')
   	```
+
+## Setup
+
+### iOS
+
+[Install TwitterKit for iOS](https://github.com/twitter-archive/twitter-kit-ios/wiki/Installation)
+
+### Android
+
+[Install TwitterKit for Android](https://github.com/twitter-archive/twitter-kit-android/wiki/Getting-Started)
 
 ## Usage
 ```javascript
@@ -40,7 +50,6 @@ import RNTwitterKit from '@mango-chutney/react-native-twitter-kit';
 
 await RNTwitterKit.compose(options);
 ```
-  
 
 ### API
 
