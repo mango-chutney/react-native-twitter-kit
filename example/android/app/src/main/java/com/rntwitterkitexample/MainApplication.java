@@ -3,7 +3,7 @@ package com.rntwitterkitexample;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
-import com.reactlibrary.RNTwitterKitPackage;
+import au.com.mangochutney.twitterkit.RNTwitterKitPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;

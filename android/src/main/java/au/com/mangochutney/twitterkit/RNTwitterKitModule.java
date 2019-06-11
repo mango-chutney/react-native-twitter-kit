@@ -1,4 +1,4 @@
-package com.reactlibrary;
+package au.com.mangochutney.twitterkit;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
