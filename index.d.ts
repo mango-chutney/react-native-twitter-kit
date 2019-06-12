@@ -1,9 +1,5 @@
-interface ComposeOptions {
-  text?: string
-  image?: string
-  url?: string
-}
-
-export interface RNTwitterKit {
-  compose: (options: ComposeOptions) => Promise<boolean>
-}
+export const compose: (options: {
+  text?: string;
+  image?: string;
+  url?: string;
+}) => Promise<boolean>;
