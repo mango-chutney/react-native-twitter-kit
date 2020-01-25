@@ -5,18 +5,16 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.support.v4.content.FileProvider;
 import android.util.Base64;
-
-import java.io.File;
-import java.io.FileOutputStream;
-import java.net.URL;
-import java.util.UUID;
-
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReadableMap;
 import com.twitter.sdk.android.tweetcomposer.TweetComposer;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.net.URL;
+import java.util.UUID;
 
 public class RNTwitterKitModule extends ReactContextBaseJavaModule {
 
@@ -59,7 +57,11 @@ public class RNTwitterKitModule extends ReactContextBaseJavaModule {
 
       decodedByte.compress(Bitmap.CompressFormat.PNG, 100, outputStream);
 
-      Uri uri = FileProvider.getUriForFile(reactContext.getCurrentActivity(), reactContext.getApplicationContext().getPackageName() + ".provider", file);
+      Uri uri =
+          FileProvider.getUriForFile(
+              reactContext.getCurrentActivity(),
+              reactContext.getApplicationContext().getPackageName() + ".provider",
+              file);
 
       builder.image(uri);
     }
