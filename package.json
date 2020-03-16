@@ -1,7 +1,7 @@
 {
   "name": "@mango-chutney/react-native-twitter-kit",
   "version": "1.0.0",
-  "description": "",
+  "description": "TwitterKit module for React Native",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,8 +11,9 @@
   ],
   "author": "",
   "license": "MIT",
+  "homepage": "https://github.com/mango-chutney/react-native-twitter-kit#readme",
   "peerDependencies": {
-    "react-native": "^0.41.2"
+    "react-native": "*"
   },
   "dependencies": {}
 }
