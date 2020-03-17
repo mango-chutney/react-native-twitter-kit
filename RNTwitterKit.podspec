@@ -14,8 +14,10 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/mango-chutney/react-native-twitter-kit", :tag => "master" }
 
   s.source_files  = "ios/**/*.{h,m}"
-
+  s.frameworks   = [ "TwitterKit", "TwitterCore" ]
+  s.static_framework = true
   s.dependency "React"
+  s.dependency "TwitterKit"
 
 end
 
